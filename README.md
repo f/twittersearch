@@ -1,4 +1,4 @@
-# Özgür Web Günleri 2012 - Workshop
+# Özgür Web Günleri 2012 - Backbone.js ile Uygulama Geliştirme Uygulamalı Semineri 
 
 Özgür Web Günleri 2012'de yapılacak olan etkinlikteki geliştirmeleri içerir. Etkinlik gününden önce
 veya etkinlik günü bu repoyu bilgisayarınıza aktarmanız gerekir.
