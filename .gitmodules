@@ -4,3 +4,6 @@
 [submodule "lib/underscore"]
 	path = lib/underscore
 	url = https://github.com/documentcloud/underscore
+[submodule "lib/jquery"]
+	path = lib/jquery
+	url = https://github.com/jquery/jquery.git
