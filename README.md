@@ -3,14 +3,10 @@
 Özgür Web Günleri 2012'de yapılacak olan etkinlikteki geliştirmeleri içerir. Etkinlik gününden önce
 veya etkinlik günü bu repoyu bilgisayarınıza aktarmanız gerekir.
 
-## Hızlı Kurulum
-
-
 ## Gereksinimler
  * git
  * npm (Node Package Manager) jQuery reposunu build etmek için.
 
-### Gereksinimlerin Kurulumu
 ```
 sudo apt-get install git npm
 ```
@@ -18,10 +14,6 @@ sudo apt-get install git npm
 ## Geliştirme Ortamı Hazırlamak
 
 Geliştirme ortamı hazırlarken **virtualenv** ve **virtualenvwrapper** kullanmanız tercih edilir.
-
-```
-easy_install virtualenv
-```
 
 ### Geliştirme Ortamının Kurulumu
 
