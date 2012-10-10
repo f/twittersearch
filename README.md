@@ -78,3 +78,13 @@ komutu ile server başlatılıp çalıştırılabilir.
 [http://localhost:8000](http://localhost:8000)
 
 adresinden uygulamaya erişebilirsiniz.
+
+## Gerekliliklerin Yüklenmemesi veya Hata Oluşması Durumunda
+
+Gerekliliklerin kurulumu dışında gerçekleşen sorunlar için `index.php` içerisinde `# CDN` başlıklı yorum satırındaki
+```html
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://underscorejs.org/underscore-min.js"></script>
+  <script src="http://backbonejs.org/backbone-min.js"></script>
+```
+kodlarının yorum kapsayıcılarını kaldırın (uncomment), böylece dosyaları CDN'den çekerek çalışmasını sağlayacaksınız.
