@@ -6,9 +6,11 @@ veya etkinlik günü bu repoyu bilgisayarınıza aktarmanız gerekir.
 ## Gereksinimler
  * git
  * npm (Node Package Manager) jQuery reposunu build etmek için.
+ * grunt
 
 ```
 sudo apt-get install git npm
+sudo npm install -g grunt
 ```
 
 ## Geliştirme Ortamı Hazırlamak
