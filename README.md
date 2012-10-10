@@ -26,7 +26,11 @@ cd lib/jquery && npm install && grunt && cd -
 
 ### Geliştirme Ortamının Çalıştırılması
 
-Uygulama dinamik bir server ortamı gerektirmediğinden `file:` protokolü ile browser'da açmak üzere de çalıştırılabilir.
+Uygulama dinamik bir server ortamı gerektirmediğinden `file:` protokolü ile browser'da açmak üzere de çalıştırılabilir. Bunun için
+`index.html` dosyasını browseriniz ile açınız.
+
+#### Not:
+İsterseniz `python -m SimpleHTTPServer` ile bir sunucu başlatıp da çalıştırabilirsiniz.
 
 ### Gerekliliklerin Yüklenmemesi veya Hata Oluşması Durumunda
 
