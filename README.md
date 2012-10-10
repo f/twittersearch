@@ -7,12 +7,6 @@ This page is in development.
 ```bash
 git clone https://github.com/fkadeveloper/twittersearch.git
 cd twittersearch
-git submodule init
-git submodule update
-cd lib/jquery
-git submodule init
-git submodule update
-npm install
-grunt
-cd -
+git submodule update --init --recursive
+cd lib/jquery && npm install && grunt && cd -
 ```
