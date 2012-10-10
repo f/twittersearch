@@ -22,6 +22,8 @@ easy_install virtualenv
 
 ## Geliştirme Ortamının Kurulumu
 
+**Eğer VirtualEnv yüklemeyi tercih etmiyorsanız bu adımı atlayabilirsiniz.**
+
 VirtualEnv kurulu ise:
 ```
 virtualenv twittersearch
@@ -35,7 +37,7 @@ mkvirtualenv twittersearch
 workon twittersearch
 cdvirtualenv
 ```
-yaptıktan sonra
+### Dosyaların Aktarılması
 
 ```
 git clone https://github.com/fkadeveloper/twittersearch.git
