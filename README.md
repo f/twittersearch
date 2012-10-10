@@ -44,8 +44,13 @@ kodlarının yorum kapsayıcılarını kaldırın (uncomment), böylece dosyalar
 
 Veya `index.cdn.html` dosyasını açarak da geliştirmeye devam edebilirsiniz.
 
-## Windows Kullanıcıları için Geliştirme
+## Windows Kullanıcıları için Geliştirme Ortamı Kurulumu
 
 Windows kullanıcıları [projeyi zip olarak indirip](https://github.com/fkadeveloper/twittersearch/zipball/master) `index.cdn.html`
 dosyasını browser'da açarak (Lütfen Internet Explorer kullanmayın!) geliştirme sürecine katılabilirler. 
 [Projeyi ZIP olarak indirin.](https://github.com/fkadeveloper/twittersearch/zipball/master)
+
+## Atölyeye Hazırlık
+
+Ekranınızda **Özgür Web Günleri 2012 - Backbone ile Uygulama Geliştirme - Fatih Kadir Akın** yazısını görüyorsanız, geliştirmeye
+hazırsınız demektir. Kolaylıklar! :)
