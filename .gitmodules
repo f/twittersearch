@@ -1,0 +1,6 @@
+[submodule "lib/backbone"]
+	path = lib/backbone
+	url = https://github.com/documentcloud/backbone
+[submodule "lib/underscore"]
+	path = lib/underscore
+	url = https://github.com/documentcloud/underscore
