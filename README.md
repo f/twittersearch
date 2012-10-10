@@ -37,3 +37,11 @@ Gerekliliklerin kurulumu dışında gerçekleşen sorunlar için `index.html` i�
 <script src="http://backbonejs.org/backbone-min.js"></script>
 ```
 kodlarının yorum kapsayıcılarını kaldırın (uncomment), böylece dosyaları CDN'den çekerek çalışmasını sağlayacaksınız.
+
+Veya `index.cdn.html` dosyasını açarak da geliştirmeye devam edebilirsiniz.
+
+## Windows Kullanıcıları için Geliştirme
+
+Windows kullanıcıları [projeyi zip olarak indirip](https://github.com/fkadeveloper/twittersearch/zipball/master) `index.cdn.html`
+dosyasını browser'da açarak (Lütfen Internet Explorer kullanmayın!) geliştirme sürecine katılabilirler. 
+[Projeyi ZIP olarak indirin.](https://github.com/fkadeveloper/twittersearch/zipball/master)
