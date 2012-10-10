@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,300&subset=latin,latin-ext);
+
+/* Hızlı reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f8f8;
+  background-image: url(http://noisepng.com/100-90-4.png);
+  color: #4099FF;
+  text-shadow: white 0px 1px 0px;
+  font-family: 'Titillium Web', Arial, sans-serif;
+}
+
+#main {
+  margin: 10px;
+}
+
+#main > header h1 {
+  font-size: 30px;
+  background: url(../img/twitter.png) no-repeat right center;
+}
+
+#main > header input {
+  -webkit-box-sizing:border-box; /* Safari */
+  -moz-box-sizing:border-box; /* Firefox */
+  box-sizing:border-box;
+  padding: 5px;
+  width: 100%;
+  outline: 0;
+  border: 3px solid #4099FF;
+  border-radius: 7px;
+  font-size: 20px;
+  font-family: 'Titillium Web';
+}
+
+#main section article {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 10px 0;
+  padding-bottom: 21px;
+  min-height: 97px;
+  border-bottom: 1px dashed #4099FF;
+  color: #222;
+}
+
+#main section article header time {
+  position: absolute;
+  right: 0px;
+  bottom: -30px;
+  font-size: 11px;
+  -webkit-transition-duration: 700ms;
+  -moz-transition-duration: 700ms;
+  -o-transition-duration: 700ms;
+  transition-duration: 700ms;
+}
+
+#main section article:hover header time {
+  bottom: 4px;
+  -webkit-transition-duration: 700ms;
+  -moz-transition-duration: 700ms;
+  -o-transition-duration: 700ms;
+  transition-duration: 700ms;
+}
+
+#main section article header a {
+  color: #4499FF;
+  text-decoration: none;
+}
+
+#main section article img {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 43px;
+  left: 0;
+  border-radius: 32px;
+}
+
+#main section article header h3,
+#main section article img + p {
+  margin-left: 73px;
+}
