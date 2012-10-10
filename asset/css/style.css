@@ -19,8 +19,8 @@ body {
 }
 
 #main > header h1 {
-  font-size: 30px;
   background: url(../img/twitter.png) no-repeat right center;
+  font-size: 30px;
 }
 
 #main > header input {
@@ -72,11 +72,11 @@ body {
 }
 
 #main section article img {
-  width: 64px;
-  height: 64px;
   position: absolute;
   top: 43px;
   left: 0;
+  width: 64px;
+  height: 64px;
   border-radius: 32px;
 }
 
