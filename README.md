@@ -57,4 +57,6 @@ dosyasını browser'da açarak (Lütfen Internet Explorer kullanmayın!) gelişt
 Ekranınızda **Özgür Web Günleri 2012 - Backbone ile Uygulama Geliştirme - Fatih Kadir Akın** yazısını görüyorsanız, geliştirmeye
 hazırsınız demektir. Kolaylıklar! :)
 
-<iframe src="https://docs.google.com/presentation/embed?id=12TtjK6p1dHdhdLcgNpOCbMh31KG90zX6y1Eh2MoTUxs&start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+## Sunum
+
+[https://docs.google.com/presentation/pub?id=12TtjK6p1dHdhdLcgNpOCbMh31KG90zX6y1Eh2MoTUxs&start=false&loop=false&delayms=3000](https://docs.google.com/presentation/pub?id=12TtjK6p1dHdhdLcgNpOCbMh31KG90zX6y1Eh2MoTUxs&start=false&loop=false&delayms=3000)
