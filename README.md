@@ -13,6 +13,15 @@ sudo apt-get install git npm
 sudo npm install -g grunt
 ```
 
+Eğer Mac OS X'te iseniz muhtemelen git zaten yüklüdür. `git --version` ile git'inizin versiyonuna bakabilirsiniz.
+Eğer yüklü değilse `brew install git` komutu ile yükleyin.
+
+npm'i OS X'e kurmak için:
+
+```
+curl https://npmjs.org/install.sh | sh
+```
+
 ## Geliştirme Ortamı Hazırlamak
 
 Geliştirme ortamı hazırlarken **virtualenv** ve **virtualenvwrapper** kullanmanız tercih edilir.
