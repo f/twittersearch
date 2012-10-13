@@ -21,6 +21,11 @@ npm'i OS X'e kurmak için:
 ```
 curl https://npmjs.org/install.sh | sh
 ```
+ardından
+```
+sudo npm install -g grunt
+```
+diyerek grunt'u kurun.
 
 ## Geliştirme Ortamı Hazırlamak
 
