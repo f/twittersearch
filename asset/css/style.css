@@ -84,3 +84,12 @@ body {
 #main section article img + p {
   margin-left: 73px;
 }
+
+#main section article header h3:hover a.from_user_name,
+#main section article header h3 a.from_user {
+  display: none;
+}
+
+#main section article header h3:hover a.from_user {
+  display: block;
+}
