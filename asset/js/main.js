@@ -21,16 +21,32 @@
  */
 (function ($, _, Backbone) {
 
-  var Tweet, // Tweet Model
-      Tweets, // Tweet Collection
-      TweetView, // Tweet Model View
-      TweetsView, // Tweet Collection View
-      SearchView, // Search Tweet View
-      Router; // Main Router
+  // # 1. Değişkenleri oluşturuyoruz.
+  // Tweet Modelini belirliyoruz. Her bir tweet bir tweet modelidir.
+  var Tweet,
+  
+      // Tweet modellerinden oluşan bir tweet collection'u olmalı.
+      Tweets,
 
-  Tweet = Backbone.Model.extend({});
+      // Her bir tweet modelinin karşılığı olan view olmalı.
+      TweetView,
 
+      // Tweet modellerinden oluşan koleksiyonun kapsayıcısı olan view, aynı zamanda
+      // TweetView'in parenti.
+      TweetsView,
+
+      // Arama bölümünün view'i. Burada arama/sonuç kontrollerini yapıyoruz.
+      SearchView,
+
+      // Temel Router, search/{query} gibi bir url'i sonuç olarak görebilmeli.
+      Router;
+
+  // # 2. Modeli oluşturuyoruz.
+  Tweet = Backbone.Model.extend();
+
+  // # 3. Koleksiyonu oluşturuyoruz.
   Tweets = Backbone.Collection.extend({
+    // # 4. Koleksiyon hangi modellerden oluşacak?
     model: Tweet,
     sync: function (method, model, options) {
       options.dataType = "jsonp";
@@ -47,7 +63,9 @@
     url: 'http://search.twitter.com/search.json'
   });
 
+  // # 5. Her bir tweet'in view'ini oluşturuyoruz.
   TweetView = Backbone.View.extend({
+    // # 6. Template kısmını ayırıp, html'ini alıyoruz, ve _.template fonksiyonuna sokuyoruz.
     template: _.template($('script#tweet-template').html()),
     text: function (text) {
       return text
@@ -55,15 +73,20 @@
         .replace(/@([\w\_]+)/gi, '<a href="#search/@$1">@$1</a>')
         .replace(/\s#([\w\_]+)/gi, ' <a href="#search/%23$1">#$1</a>')
     },
+    // # 7. Standart render fonksiyonu. setElement ile ayarlanıyor.
     render: function () {
       this.setElement(this.template(this.model.toJSON()));
       return this;
     }
   });
 
+  // # 8. Tweetlerin kapsayıcı elementini belirliyoruz.
   TweetsView = Backbone.View.extend({
+    // # 9. Element belirleniyor.
     el: '#main section',
     initialize: function () {
+      this.$el.html('');
+
       this.tweets = new Tweets();
       this.tweets.on('add', this.addTweet, this);
       this.tweets.on('reset', this.loadTweets, this);
@@ -79,24 +102,30 @@
     }
   });
 
+  // # 10. Arama kısmının elementini belirliyoruz.
   SearchView = Backbone.View.extend({
+    // # 11. Elementi bağlıyoruz.
     el: '#main header form',
     events: {
       'submit': 'search'
     },
     initialize: function () {
       this.input = this.$('input');
-      this.router = this.options.router;
-
-      if (this.options.query) {
-        var search = new TweetsView({query: this.options.query});
-        this.input.val(this.options.query);
-      }
     },
     search: function (e) {
       var query = this.input.val();
-      this.router.navigate('search/' + escape(query), true); 
+      this.options.router.navigate('search/' + encodeURIComponent(query), {trigger: true}); 
       e.preventDefault();
+    }
+  });
+
+  MoreTweetsView = Backbone.View.extend({
+    el: '#main footer button',
+    events: {
+      'click': 'loadMore'
+    },
+    loadMore: function () {
+      this.options.tweets.fetch({data: this.options.tweets.nextPage.replace(/^\?/,'')});
     }
   });
 
@@ -104,8 +133,13 @@
     routes: {
       'search/:query': 'search'
     },
+    initialize: function () {
+      this.searchView = new SearchView({router: this});
+    },
     search: function (query) {
-      new SearchView({query: query, router: this});
+      this.tweetsView = new TweetsView({query: query});
+      this.searchView.input.val(query);
+      this.moreTweetsView = new MoreTweetsView({tweets: this.tweetsView.tweets});
     }
   });
 
