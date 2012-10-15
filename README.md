@@ -5,11 +5,11 @@ veya etkinlik günü bu repoyu bilgisayarınıza aktarmanız gerekir.
 
 ## Gereksinimler
  * git
- * npm (Node Package Manager) jQuery reposunu build etmek için.
+ * node, npm (Node Package Manager) jQuery reposunu build etmek için.
  * grunt
 
 ```
-sudo apt-get install git npm
+sudo apt-get install git nodejs npm
 sudo npm install -g grunt
 ```
 
@@ -19,6 +19,7 @@ Eğer yüklü değilse `brew install git` komutu ile yükleyin.
 npm'i OS X'e kurmak için:
 
 ```
+brew install nodejs
 curl https://npmjs.org/install.sh | sh
 ```
 ardından
@@ -26,6 +27,8 @@ ardından
 sudo npm install -g grunt
 ```
 diyerek grunt'u kurun.
+
+Not: [http://mxcl.github.com/homebrew/](Homebrew) kurulumu için: `ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"`
 
 ## Geliştirme Ortamı Hazırlamak
 
